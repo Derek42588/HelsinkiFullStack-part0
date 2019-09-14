@@ -1,0 +1,16 @@
+note over browser:
+browser makes the POST
+described below, containing the
+new post as JSON Data.
+The content-type header tells
+the server that the data is JSON.
+The event handler from the 
+javascript code re-renders the page
+with the new note
+end note 
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note over server:
+The server does not redirect
+end note
+server->browser: 201 created
